@@ -26,7 +26,10 @@ const ftr=`<footer class="site"><div class="wrap"><div class="cols">
 document.body.insertAdjacentHTML('afterbegin',hdr);
 document.body.insertAdjacentHTML('beforeend',ftr);
 const b=document.querySelector('.burger'),nv=document.querySelector('nav.main');
-b.onclick=()=>{const o=nv.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+const setMenu=o=>{nv.classList.toggle('open',o);b.classList.toggle('x',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
+b.onclick=()=>setMenu(!nv.classList.contains('open'));
+nv.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false)});
+window.addEventListener('resize',()=>{if(innerWidth>1060)setMenu(false)});
 
 /* ---------- generative artwork ---------- */
 const P={wine:'#8c3550',rose:'#c98a9a',gold:'#b08d57',cream:'#f2e8da',night:'#231a24',navy:'#1d2740',sage:'#6b7a68',clay:'#b86f50',sand:'#e3cfb4',ink:'#2a1d24',blush:'#ead2cb',teal:'#3d6b6e'};
