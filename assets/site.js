@@ -3,9 +3,10 @@
 const NAV=[
  {t:'Home',h:'index.html'},
  {t:'Classes',m:[['Class details & fees','classes.html'],['Art forms','art-forms.html'],['Adult classes','adults.html'],['Summer camp','summer-camp.html']]},
- {t:'Workshops',m:[['Madhubani & Lippan','madhubani-lippan.html'],['Mixed media','mixed-media.html'],['Mandala art','mandala.html'],['Paint & sip night','paint-and-sip.html'],['Diwali workshop','diwali.html'],['Ganesha idol making','ganesha.html']]},
- {t:'Events',m:[['Paint parties','paint-parties.html'],['Past events','events.html']]},
+ {t:'Workshops',m:[['Madhubani & Lippan','madhubani-lippan.html'],['Mixed media','mixed-media.html'],['Mandala art','mandala.html'],['Diwali workshop','diwali.html'],['Ganesha idol making','ganesha.html']]},
+ {t:'Events',m:[['Paint & sip night','paint-and-sip.html'],['Corporate team building paint event','corporate-team-building.html'],['Private paint party event','paint-parties.html'],['Past events','events.html']]},
  {t:'Gallery',m:[['Student gallery','student-gallery.html'],['Artist portfolio','portfolio.html'],['Achievements','achievements.html']]},
+ {t:'Bio',h:'bio.html'},
  {t:'About',h:'about.html'},
  {t:'Contact',h:'contact.html'}
 ];
@@ -20,7 +21,7 @@ const hdr=`<div class="announce">Spring &rsquo;26 registration is open &mdash; o
 const ftr=`<footer class="site"><div class="wrap"><div class="cols">
 <div><div class="brand">Reshu Art Lobby</div><p style="max-width:22em;font-size:.95rem">Art classes for kids and adults across Northern Virginia &mdash; in the studio and online.</p></div>
 <div><h5>Explore</h5><ul><li><a href="classes.html">Classes &amp; fees</a></li><li><a href="art-forms.html">Art forms</a></li><li><a href="summer-camp.html">Summer camp</a></li><li><a href="paint-parties.html">Paint parties</a></li><li><a href="student-gallery.html">Gallery</a></li></ul></div>
-<div><h5>Studio</h5><ul><li><a href="about.html">About Reshu</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="events.html">Past events</a></li><li><a href="register.html">Register</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h5>Studio</h5><ul><li><a href="bio.html">Bio</a></li><li><a href="about.html">About the studio</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="events.html">Past events</a></li><li><a href="register.html">Register</a></li><li><a href="contact.html">Contact</a></li></ul></div>
 <div><h5>Visit</h5><ul><li>14240 Sullyfield Cir, Unit U<br>Chantilly, VA 20151</li><li>42933 Thornblade Cir<br>Broadlands, VA 20148</li><li><a href="tel:5713257622">(571) 325-7622</a></li><li><a href="mailto:reshuartlobby@gmail.com">reshuartlobby@gmail.com</a></li></ul></div>
 </div><div class="base"><span>&copy; 2026 Reshu Art Lobby. All rights reserved.</span><span><a href="https://www.instagram.com/reshuartlobby/" target="_blank" rel="noopener">Instagram</a> &nbsp;&middot;&nbsp; <a href="https://www.facebook.com/ReshuArtLobby" target="_blank" rel="noopener">Facebook</a></span></div></div></footer>`;
 document.body.insertAdjacentHTML('afterbegin',hdr);

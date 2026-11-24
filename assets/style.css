@@ -1,6 +1,6 @@
 /* Reshu Art Lobby — quiet-luxury gallery aesthetic */
 :root{
-  --bg:#faf6f0; --bg2:#f3ebe1; --card:#fffdf9; --ink:#241a1f; --muted:#6f6168;
+  --bg:#FCF1F1; --bg2:#f6e3e3; --card:#fffafa; --ink:#241a1f; --muted:#6f6168;
   --wine:#8c3550; --wine-d:#6e2740; --gold:#a98450; --sage:#6b7a68; --night:#231a24;
   --line:rgba(36,26,31,.14); --line-s:rgba(36,26,31,.08);
   --serif:'Cormorant Garamond','Times New Roman',serif; --sans:'Jost',system-ui,sans-serif;
@@ -38,7 +38,7 @@ nav.main>a,nav.main .dd>button{font:500 .78rem var(--sans);letter-spacing:.16em;
 nav.main>a::after,nav.main .dd>button::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:1px;background:var(--wine);transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease)}
 nav.main>a:hover::after,nav.main .dd:hover>button::after,nav.main>a.on::after,nav.main .dd.on>button::after{transform:scaleX(1)}
 .dd{position:relative}
-.dd .menu{position:absolute;top:100%;left:0;min-width:250px;background:var(--card);border:1px solid var(--line);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.3s var(--ease);box-shadow:0 30px 60px -30px rgba(36,26,31,.35)}
+.dd .menu{position:absolute;top:100%;left:0;min-width:340px;background:var(--card);border:1px solid var(--line);padding:10px;opacity:0;visibility:hidden;transform:translateY(8px);transition:.3s var(--ease);box-shadow:0 30px 60px -30px rgba(36,26,31,.35)}
 .dd:hover .menu,.dd:focus-within .menu{opacity:1;visibility:visible;transform:none}
 .menu a{display:block;padding:9px 14px;font-size:.95rem}
 .menu a:hover,.menu a.on{color:var(--wine);background:var(--bg2)}
