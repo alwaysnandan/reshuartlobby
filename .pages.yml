@@ -1,47 +1,219 @@
-# Pages CMS configuration — edit the site at https://app.pagescms.org
+# Pages CMS configuration - edit the site at https://app.pagescms.org
 # Content lives in content/*.yml; uploaded pictures go to uploads/.
 media:
   input: uploads
   output: uploads
-content:
-  - name: pages
-    label: Pages
-    type: collection
-    path: content/pages
-    format: yaml
+components:
+  hero:
+    type: object
+    label: Top banner
     fields:
-      - name: title
-        label: Page title
+      - name: style
+        label: Style
+        type: select
+        options:
+          values:
+            - page
+            - home
+      - name: eyebrow
+        label: Small heading (home only)
         type: string
-        description: Shown in the browser tab and search results.
-      - name: description
-        label: Search description
+      - name: crumbs
+        label: Breadcrumb
+        type: string
+        description: e.g. Classes / Art forms
+      - name: title
+        label: Big title
+        type: string
+        description: Put *asterisks* around words to show them in italic colour.
+      - name: lede
+        label: Intro sentence
         type: text
-      - name: hero
-        label: Top banner
+      - name: image
+        label: Photo
+        type: image
+        description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
+      - name: art
+        label: Illustration (used only when there is no photo)
+        type: select
+        options:
+          values:
+            - abstract
+            - landscape
+            - still
+            - madhubani
+            - mandala
+            - lippan
+            - watercolor
+            - texture
+            - diya
+            - ganesha
+      - name: art_seed
+        label: Illustration variation
+        type: number
+        description: Any number — changes the look of the illustration.
+      - name: seal_label
+        label: Round badge — small text (home only)
+        type: string
+      - name: seal_text
+        label: Round badge — main text (home only)
+        type: string
+      - name: buttons
+        label: Buttons
         type: object
+        list: true
         fields:
+          - name: label
+            label: Button text
+            type: string
+          - name: link
+            label: Link
+            type: string
+            description: A page name like "classes" or "register", or a full web address.
           - name: style
             label: Style
             type: select
             options:
               values:
-                - page
-                - home
+                - solid
+                - outline
+                - link
+  sections:
+    type: object
+    list: true
+    label: Page sections
+    description: Each block of the page, top to bottom. You can add, remove and reorder sections.
+    fields:
+      - name: layout
+        label: Section type
+        type: select
+        options:
+          values:
+            - columns
+            - facts
+            - cards
+            - numbers
+            - features
+            - prices
+            - timeline
+            - awards
+            - gallery
+            - quote
+            - cta
+            - notice
+            - marquee
+        description: columns = text and/or picture side by side · facts = fact strip · cards = grid of cards · numbers / features = icon-style grid · prices = price list · timeline · awards · gallery · quote · cta = call-to-action band · notice = highlighted note · marquee = scrolling words
+      - name: tint
+        label: Background
+        type: select
+        options:
+          values:
+            - none
+            - tint
+            - dark
+      - name: eyebrow
+        label: Small heading above
+        type: string
+      - name: heading
+        label: Heading
+        type: string
+        description: Put *asterisks* around words to show them in italic colour.
+      - name: intro
+        label: Intro text
+        type: text
+      - name: blocks
+        label: Columns (for "columns")
+        type: object
+        list: true
+        fields:
           - name: eyebrow
-            label: Small heading (home only)
+            label: Small heading above
             type: string
-          - name: crumbs
-            label: Breadcrumb
-            type: string
-            description: e.g. Classes / Art forms
-          - name: title
-            label: Big title
+            description: Short uppercase label.
+          - name: heading
+            label: Heading
             type: string
             description: Put *asterisks* around words to show them in italic colour.
-          - name: lede
-            label: Intro sentence
+          - name: body
+            label: Text
             type: text
+            description: Blank line = new paragraph. *italic*, **bold**, [link text](address). "### Title" makes a small heading and "- item" a bullet list.
+          - name: list
+            label: Checklist
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Bold lead-in (optional)
+                type: string
+              - name: text
+                label: Text
+                type: string
+          - name: prices
+            label: Prices / rows
+            type: object
+            list: true
+            fields:
+              - name: title
+                label: Title
+                type: string
+              - name: note
+                label: Details
+                type: text
+              - name: amount
+                label: Amount
+                type: string
+                description: e.g. $250
+              - name: unit
+                label: Unit
+                type: string
+                description: e.g. / week
+              - name: link_label
+                label: Link text (instead of amount)
+                type: string
+              - name: link
+                label: Link
+                type: string
+          - name: schedule
+            label: Schedule
+            type: object
+            list: true
+            fields:
+              - name: label
+                label: Place / label
+                type: string
+              - name: text
+                label: Dates & time
+                type: string
+          - name: chips
+            label: Tags
+            type: string
+            list: true
+          - name: footnote
+            label: Small print
+            type: string
+          - name: button_label
+            label: Button text
+            type: string
+          - name: button_link
+            label: Button link
+            type: string
+          - name: button_style
+            label: Button style
+            type: select
+            options:
+              values:
+                - solid
+                - outline
+                - link
+          - name: form
+            label: Show a form here
+            type: select
+            options:
+              values:
+                - none
+                - contact
+                - register
           - name: image
             label: Photo
             type: image
@@ -65,419 +237,612 @@ content:
             label: Illustration variation
             type: number
             description: Any number — changes the look of the illustration.
-          - name: seal_label
-            label: Round badge — small text (home only)
+          - name: caption
+            label: Photo description (for accessibility)
             type: string
-          - name: seal_text
-            label: Round badge — main text (home only)
-            type: string
-          - name: buttons
-            label: Buttons
-            type: object
-            list: true
-            fields:
-              - name: label
-                label: Button text
-                type: string
-              - name: link
-                label: Link
-                type: string
-                description: A page name like "classes" or "register", or a full web address.
-              - name: style
-                label: Style
-                type: select
-                options:
-                  values:
-                    - solid
-                    - outline
-                    - link
-      - name: sections
-        label: Page sections
+        description: Add one or two columns. A column with only a photo/illustration shows the picture.
+      - name: facts
+        label: Facts (for "facts")
         type: object
         list: true
         fields:
-          - name: layout
-            label: Section type
-            type: select
-            options:
-              values:
-                - columns
-                - facts
-                - cards
-                - numbers
-                - features
-                - prices
-                - timeline
-                - awards
-                - gallery
-                - quote
-                - cta
-                - notice
-                - marquee
-            description: columns = text and/or picture side by side · facts = fact strip · cards = grid of cards · numbers / features = icon-style grid · prices = price list · timeline · awards · gallery · quote · cta = call-to-action band · notice = highlighted note · marquee = scrolling words
-          - name: tint
-            label: Background
-            type: select
-            options:
-              values:
-                - none
-                - tint
-                - dark
-          - name: eyebrow
-            label: Small heading above
+          - name: label
+            label: Label
             type: string
-          - name: heading
-            label: Heading
+          - name: value
+            label: Value
             type: string
-            description: Put *asterisks* around words to show them in italic colour.
-          - name: intro
-            label: Intro text
-            type: text
-          - name: blocks
-            label: Columns (for "columns")
-            type: object
-            list: true
-            fields:
-              - name: eyebrow
-                label: Small heading above
-                type: string
-                description: Short uppercase label.
-              - name: heading
-                label: Heading
-                type: string
-                description: Put *asterisks* around words to show them in italic colour.
-              - name: body
-                label: Text
-                type: text
-                description: Blank line = new paragraph. *italic*, **bold**, [link text](address). "### Title" makes a small heading and "- item" a bullet list.
-              - name: list
-                label: Checklist
-                type: object
-                list: true
-                fields:
-                  - name: title
-                    label: Bold lead-in (optional)
-                    type: string
-                  - name: text
-                    label: Text
-                    type: string
-              - name: prices
-                label: Prices / rows
-                type: object
-                list: true
-                fields:
-                  - name: title
-                    label: Title
-                    type: string
-                  - name: note
-                    label: Details
-                    type: text
-                  - name: amount
-                    label: Amount
-                    type: string
-                    description: e.g. $250
-                  - name: unit
-                    label: Unit
-                    type: string
-                    description: e.g. / week
-                  - name: link_label
-                    label: Link text (instead of amount)
-                    type: string
-                  - name: link
-                    label: Link
-                    type: string
-              - name: schedule
-                label: Schedule
-                type: object
-                list: true
-                fields:
-                  - name: label
-                    label: Place / label
-                    type: string
-                  - name: text
-                    label: Dates & time
-                    type: string
-              - name: chips
-                label: Tags
-                type: string
-                list: true
-              - name: footnote
-                label: Small print
-                type: string
-              - name: button_label
-                label: Button text
-                type: string
-              - name: button_link
-                label: Button link
-                type: string
-              - name: button_style
-                label: Button style
-                type: select
-                options:
-                  values:
-                    - solid
-                    - outline
-                    - link
-              - name: form
-                label: Show a form here
-                type: select
-                options:
-                  values:
-                    - none
-                    - contact
-                    - register
-              - name: image
-                label: Photo
-                type: image
-                description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
-              - name: art
-                label: Illustration (used only when there is no photo)
-                type: select
-                options:
-                  values:
-                    - abstract
-                    - landscape
-                    - still
-                    - madhubani
-                    - mandala
-                    - lippan
-                    - watercolor
-                    - texture
-                    - diya
-                    - ganesha
-              - name: art_seed
-                label: Illustration variation
-                type: number
-                description: Any number — changes the look of the illustration.
-              - name: caption
-                label: Photo description (for accessibility)
-                type: string
-            description: Add one or two columns. A column with only a photo/illustration shows the picture.
-          - name: facts
-            label: Facts (for "facts")
-            type: object
-            list: true
-            fields:
-              - name: label
-                label: Label
-                type: string
-              - name: value
-                label: Value
-                type: string
-          - name: cards
-            label: Cards (for "cards")
-            type: object
-            list: true
-            fields:
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: text
-              - name: link
-                label: Link to page
-                type: string
-              - name: image
-                label: Photo
-                type: image
-                description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
-              - name: art
-                label: Illustration (used only when there is no photo)
-                type: select
-                options:
-                  values:
-                    - abstract
-                    - landscape
-                    - still
-                    - madhubani
-                    - mandala
-                    - lippan
-                    - watercolor
-                    - texture
-                    - diya
-                    - ganesha
-              - name: art_seed
-                label: Illustration variation
-                type: number
-                description: Any number — changes the look of the illustration.
-          - name: columns
-            label: Cards per row (for "cards")
-            type: select
-            options:
-              values:
-                - '3'
-                - '4'
-          - name: stats
-            label: Statistics row (for "cards")
-            type: object
-            list: true
-            fields:
-              - name: number
-                label: Number
-                type: string
-              - name: label
-                label: Label
-                type: string
-          - name: numbers
-            label: Items (for "numbers")
-            type: object
-            list: true
-            fields:
-              - name: number
-                label: Big number
-                type: string
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: text
-          - name: features
-            label: Items (for "features")
-            type: object
-            list: true
-            fields:
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: text
-          - name: prices
-            label: Price rows (for "prices")
-            type: object
-            list: true
-            fields:
-              - name: title
-                label: Title
-                type: string
-              - name: note
-                label: Details
-                type: text
-              - name: amount
-                label: Amount
-                type: string
-              - name: unit
-                label: Unit
-                type: string
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link
-                label: Link
-                type: string
-          - name: footnote
-            label: Small print
-            type: text
-          - name: notice
-            label: Highlighted note (for "prices")
-            type: text
-          - name: timeline
-            label: Entries (for "timeline")
-            type: object
-            list: true
-            fields:
-              - name: date
-                label: Date
-                type: string
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: text
-          - name: awards
-            label: Entries (for "awards")
-            type: object
-            list: true
-            fields:
-              - name: year
-                label: Year / label
-                type: string
-              - name: badge
-                label: Badge (e.g. 1st place)
-                type: string
-              - name: title
-                label: Title
-                type: string
-              - name: text
-                label: Text
-                type: text
-          - name: gallery
-            label: Pictures (for "gallery")
-            type: object
-            list: true
-            fields:
-              - name: title
-                label: Title
-                type: string
-              - name: category
-                label: Category
-                type: string
-                description: Used for the filter buttons.
-              - name: image
-                label: Photo
-                type: image
-                description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
-              - name: art
-                label: Illustration (if no photo)
-                type: select
-                options:
-                  values:
-                    - abstract
-                    - landscape
-                    - still
-                    - madhubani
-                    - mandala
-                    - lippan
-                    - watercolor
-                    - texture
-                    - diya
-                    - ganesha
+      - name: cards
+        label: Cards (for "cards")
+        type: object
+        list: true
+        fields:
+          - name: kicker
+            label: Small label
+            type: string
+          - name: title
+            label: Title
+            type: string
           - name: text
-            label: Text (for "quote" and "notice")
+            label: Text
             type: text
-          - name: cite
-            label: Quote by (for "quote")
+          - name: link
+            label: Link to page
             type: string
-          - name: body
-            label: Text (for "cta")
+          - name: image
+            label: Photo
+            type: image
+            description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
+          - name: art
+            label: Illustration (used only when there is no photo)
+            type: select
+            options:
+              values:
+                - abstract
+                - landscape
+                - still
+                - madhubani
+                - mandala
+                - lippan
+                - watercolor
+                - texture
+                - diya
+                - ganesha
+          - name: art_seed
+            label: Illustration variation
+            type: number
+            description: Any number — changes the look of the illustration.
+      - name: columns
+        label: Cards per row (for "cards")
+        type: select
+        options:
+          values:
+            - '3'
+            - '4'
+      - name: stats
+        label: Statistics row (for "cards")
+        type: object
+        list: true
+        fields:
+          - name: number
+            label: Number
             type: string
-          - name: buttons
-            label: Buttons (for "cta")
-            type: object
-            list: true
-            fields:
-              - name: label
-                label: Button text
-                type: string
-              - name: link
-                label: Link
-                type: string
-                description: A page name like "classes" or "register", or a full web address.
-              - name: style
-                label: Style
-                type: select
-                options:
-                  values:
-                    - solid
-                    - outline
-                    - link
-          - name: words
-            label: Words (for "marquee")
+          - name: label
+            label: Label
             type: string
-            list: true
-          - name: button_label
-            label: Link text under cards
+      - name: numbers
+        label: Items (for "numbers")
+        type: object
+        list: true
+        fields:
+          - name: number
+            label: Big number
             type: string
-          - name: button_link
-            label: Link under cards
+          - name: title
+            label: Title
             type: string
-        description: Each block of the page, top to bottom. You can add, remove and reorder sections.
+          - name: text
+            label: Text
+            type: text
+      - name: features
+        label: Items (for "features")
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: prices
+        label: Price rows (for "prices")
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: note
+            label: Details
+            type: text
+          - name: amount
+            label: Amount
+            type: string
+          - name: unit
+            label: Unit
+            type: string
+          - name: link_label
+            label: Link text
+            type: string
+          - name: link
+            label: Link
+            type: string
+      - name: footnote
+        label: Small print
+        type: text
+      - name: notice
+        label: Highlighted note (for "prices")
+        type: text
+      - name: timeline
+        label: Entries (for "timeline")
+        type: object
+        list: true
+        fields:
+          - name: date
+            label: Date
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: awards
+        label: Entries (for "awards")
+        type: object
+        list: true
+        fields:
+          - name: year
+            label: Year / label
+            type: string
+          - name: badge
+            label: Badge (e.g. 1st place)
+            type: string
+          - name: title
+            label: Title
+            type: string
+          - name: text
+            label: Text
+            type: text
+      - name: gallery
+        label: Pictures (for "gallery")
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: category
+            label: Category
+            type: string
+            description: Used for the filter buttons.
+          - name: image
+            label: Photo
+            type: image
+            description: Upload your own photo here. If left empty, a decorative illustration is shown instead.
+          - name: art
+            label: Illustration (if no photo)
+            type: select
+            options:
+              values:
+                - abstract
+                - landscape
+                - still
+                - madhubani
+                - mandala
+                - lippan
+                - watercolor
+                - texture
+                - diya
+                - ganesha
+      - name: text
+        label: Text (for "quote" and "notice")
+        type: text
+      - name: cite
+        label: Quote by (for "quote")
+        type: string
+      - name: body
+        label: Text (for "cta")
+        type: string
+      - name: buttons
+        label: Buttons (for "cta")
+        type: object
+        list: true
+        fields:
+          - name: label
+            label: Button text
+            type: string
+          - name: link
+            label: Link
+            type: string
+            description: A page name like "classes" or "register", or a full web address.
+          - name: style
+            label: Style
+            type: select
+            options:
+              values:
+                - solid
+                - outline
+                - link
+      - name: words
+        label: Words (for "marquee")
+        type: string
+        list: true
+      - name: button_label
+        label: Link text under cards
+        type: string
+      - name: button_link
+        label: Link under cards
+        type: string
+content:
+  - name: page-index
+    label: Home
+    type: file
+    path: content/pages/index.yml
+    format: yaml
+    fields:
+      - name: title
+        label: Page title
+        type: string
+        description: Shown in the browser tab and search results.
+      - name: description
+        label: Search description
+        type: text
+      - name: hero
+        component: hero
+      - name: sections
+        component: sections
+  - name: classes
+    label: Classes
+    type: group
+    items:
+      - name: page-classes
+        label: Class details & fees
+        type: file
+        path: content/pages/classes.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-art-forms
+        label: Art forms
+        type: file
+        path: content/pages/art-forms.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-adults
+        label: Adult classes
+        type: file
+        path: content/pages/adults.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-summer-camp
+        label: Summer camp
+        type: file
+        path: content/pages/summer-camp.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+  - name: workshops
+    label: Workshops
+    type: group
+    items:
+      - name: page-madhubani-lippan
+        label: Madhubani & Lippan
+        type: file
+        path: content/pages/madhubani-lippan.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-mixed-media
+        label: Mixed media
+        type: file
+        path: content/pages/mixed-media.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-mandala
+        label: Mandala art
+        type: file
+        path: content/pages/mandala.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-diwali
+        label: Diwali workshop
+        type: file
+        path: content/pages/diwali.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-ganesha
+        label: Ganesha idol making
+        type: file
+        path: content/pages/ganesha.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+  - name: events
+    label: Events
+    type: group
+    items:
+      - name: page-paint-and-sip
+        label: Paint & sip night
+        type: file
+        path: content/pages/paint-and-sip.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-corporate-team-building
+        label: Corporate team building
+        type: file
+        path: content/pages/corporate-team-building.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-paint-parties
+        label: Private paint party
+        type: file
+        path: content/pages/paint-parties.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-events
+        label: Past events
+        type: file
+        path: content/pages/events.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+  - name: gallery
+    label: Gallery
+    type: group
+    items:
+      - name: page-student-gallery
+        label: Student gallery
+        type: file
+        path: content/pages/student-gallery.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-portfolio
+        label: Artist portfolio
+        type: file
+        path: content/pages/portfolio.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-achievements
+        label: Achievements
+        type: file
+        path: content/pages/achievements.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+  - name: studio
+    label: About
+    type: group
+    items:
+      - name: page-bio
+        label: Bio
+        type: file
+        path: content/pages/bio.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-about
+        label: About the studio
+        type: file
+        path: content/pages/about.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-contact
+        label: Contact
+        type: file
+        path: content/pages/contact.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
+      - name: page-register
+        label: Register
+        type: file
+        path: content/pages/register.yml
+        format: yaml
+        fields:
+          - name: title
+            label: Page title
+            type: string
+            description: Shown in the browser tab and search results.
+          - name: description
+            label: Search description
+            type: text
+          - name: hero
+            component: hero
+          - name: sections
+            component: sections
   - name: site
     label: Site settings (menu, footer, contact)
     type: file
