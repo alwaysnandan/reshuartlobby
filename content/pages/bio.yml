@@ -1,0 +1,36 @@
+title: Bio — Reshu Jain
+description: Reshu Jain, founder of Reshu Art Lobby — from software engineer to artist and teacher in Northern Virginia.
+hero:
+  crumbs: Bio
+  title: Meet *Reshu*
+  lede: Founder, artist and teacher — sharing a lifelong passion for art with students across Northern Virginia.
+  art: watercolor
+  art_seed: 19
+sections:
+  - layout: columns
+    blocks:
+      - art: still
+        art_seed: 3
+        caption: Reshu Jain
+      - eyebrow: Founder
+        heading: Reshu *Jain*
+        body: |-
+          Born and raised in India, Reshu has always been enthusiastic about art. After school she seemed destined to become a software engineer — until, after her first baby, she realised her mind and soul lay in making art.
+
+          Since then she has created vivid, colourful still lifes, landscapes, folk life, nature, abstracts and portraits. Based in the Northern Virginia / DC area with her husband and two children, she teaches beginners and advanced students in her studio — water colour, acrylic, sketching, charcoal, oil pastels and more.
+
+          After a hectic day, painting is her most effective form of relaxation. She has taken part in state-level portrait competitions by Art Space, Herndon (VA) and exhibited in Public Art in Reston.
+
+          ### Memberships
+
+          - League of Reston Artists
+          - International Watercolor Society (IWS)
+  - layout: cta
+    heading: Paint with Reshu
+    body: Join a class, a workshop or a paint night at the studio.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

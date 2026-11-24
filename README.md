@@ -1,5 +1,6 @@
 # Reshu Art Lobby website
 
-Static multi-page website (HTML, CSS, JavaScript — no build step).
+Static website built from content files (`content/*.yml`) and edited with Pages CMS.
+See [docs/EDITING.md](docs/EDITING.md) for how to edit it and how to add editors.
 
-Open `index.html` in a browser, or run `node serve.js` and visit http://localhost:5057.
+Local preview: `npm install && npm run dev` → http://localhost:5057

@@ -1,0 +1,52 @@
+title: Mixed Media Workshop — The Golden Majesty
+description: Beginner-friendly modeling paste and gold leaf texture art workshop in Ashburn and Chantilly, VA.
+hero:
+  crumbs: Workshops / Mixed media
+  title: The Golden *Majesty*
+  lede: A beginner-friendly texture-art workshop for adults — modeling paste, acrylics and elegant gold leaf on a large canvas.
+  art: texture
+  art_seed: 4
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: facts
+    facts:
+      - label: Format
+        value: 3 sessions (about 2 hrs each)
+      - label: Canvas
+        value: 22 × 28 inches
+      - label: Level
+        value: Beginners welcome
+      - label: Fee
+        value: $259, all supplies included
+  - layout: columns
+    blocks:
+      - eyebrow: The workshop
+        heading: Build, layer, *gild*
+        body: |-
+          No prior art experience is needed. With step-by-step guidance you will build beautiful textures, add dimension, layer colour and finish with gold-leaf accents — leaving with a one-of-a-kind piece to display.
+
+          Included: modeling paste, gold leaf, gold and other acrylic paints, canvas and varnish glaze.
+        schedule:
+          - label: Ashburn
+            text: Sundays · Oct 4, 11, 18 · 5 – 7 pm
+          - label: Chantilly
+            text: Thursdays · Oct 1, 8, 15 · 6 – 8 pm
+      - eyebrow: Your instructor
+        heading: Raj *Kaur*
+        body: |-
+          Art has been part of Raj’s life since childhood — portraits and commissions first, then a professional career from 2021. Inspired by spirituality and meditation, she works in mixed media including charcoal and gold leaf to create soulful, meaningful work.
+
+          [@rkartsyy on Instagram](https://www.instagram.com/rkartsyy)
+  - layout: notice
+    text: '**A note on dates.** Dates and fees on this page follow the most recent schedule the studio has posted. New sessions are announced on [Instagram](https://www.instagram.com/reshuartlobby/) — message us to confirm the next dates before you book.'
+  - layout: cta
+    heading: Make a golden masterpiece
+    body: Seats are limited for each studio session.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

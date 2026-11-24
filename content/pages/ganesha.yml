@@ -1,0 +1,41 @@
+title: Ganesha Idol Making Workshop
+description: An eco-friendly clay Ganesha idol making and decorating workshop for kids — the highlight of our year.
+hero:
+  crumbs: Workshops / Ganesha
+  title: Sculpting *Ganesha*
+  lede: The highlight of our year — and our families agree. Shape an eco-friendly clay idol, then paint and decorate it in a second session.
+  art: ganesha
+  art_seed: 1
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: facts
+    facts:
+      - label: Day 1
+        value: Idol making with eco-friendly clay
+      - label: Day 2
+        value: Decorating Ganesha
+      - label: Includes
+        value: All art supplies
+      - label: Fee
+        value: $59
+  - layout: columns
+    blocks:
+      - eyebrow: A tradition in clay
+        heading: Made with *love*
+        body: |-
+          Children learn the basics of sculpting while forming their own Ganesha from natural, eco-friendly clay. The second session is devoted to colour, ornament and finishing touches.
+
+          We have run this workshop in the studio and online since 2020 — many families look forward to it all year.
+      - art: ganesha
+        art_seed: 2
+  - layout: cta
+    heading: Join us next Ganesh Chaturthi
+    body: Ask us to add you to the early-notice list.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

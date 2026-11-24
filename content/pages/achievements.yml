@@ -1,0 +1,48 @@
+title: Achievements
+description: Contest wins and recognitions by Reshu Art Lobby students — from community art contests to NASA.
+hero:
+  crumbs: Gallery / Achievements
+  title: Proud of every *artist*
+  lede: Our students have earned recognition in community, county, state and national art competitions. Congratulations to each of them.
+  art: madhubani
+  art_seed: 7
+sections:
+  - layout: awards
+    awards:
+      - year: Contest
+        badge: 1st place
+        title: Tamil Community Art Contest
+        text: Abhinav Palaniappan took 1st place; Tanvika Muthu won 1st and Abhinav 4th in the first category.
+      - year: '2018'
+        badge: Certificate
+        title: Kids’ Art Contest — Fairfax Water
+        text: Abhinav Palaniappan received a certificate recognising exceptional artwork.
+      - year: Virginia
+        badge: 1st place
+        title: Loudoun Soil & Water Conservation
+        text: Avinash Venkatesh won first place in Virginia; his work advanced to the state-level competition.
+      - year: '2019'
+        badge: 2nd place
+        title: Langley Student Art Contest
+        text: Samanvi Pologi won 2nd place.
+      - year: '2021'
+        badge: 3rd place · National
+        title: National NASA Art Contest
+        text: Aanya Jain attained 3rd place at the national level.
+      - year: '2022'
+        badge: Featured
+        title: McNair ES “Reflections” Competition
+        text: 'Theme: “Show your Voice.” Six-year-old Naina portrayed hers singing amid nature; Kaira Sampath’s piece stood up to bullying with an angel of support.'
+      - year: Radio
+        badge: 2nd place
+        title: Intense DMV 102.9 FM Drawing Competition
+        text: Anvika Kajjam and Ashwika each achieved 2nd place.
+  - layout: cta
+    heading: Your artist could be next
+    body: Start with a free trial class.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

@@ -1,0 +1,33 @@
+title: Contact
+description: Contact Reshu Art Lobby — studios in Chantilly and Ashburn, Virginia. Call (571) 325-7622 or email.
+hero:
+  crumbs: Contact
+  title: Say *hello*
+  lede: Questions about classes, workshops or parties? Drop us a line — we usually reply within a day.
+sections:
+  - layout: columns
+    blocks:
+      - form: contact
+      - prices:
+          - title: Chantilly
+            note: |-
+              14240 Sullyfield Cir, Unit U
+              Chantilly, Virginia 20151
+            link_label: Directions
+            link: https://www.google.com/maps/search/?api=1&query=14240+Sullyfield+Cir+Unit+U+Chantilly+VA+20151
+          - title: Ashburn
+            note: |-
+              42933 Thornblade Circle, Broadlands
+              Virginia 20148
+            link_label: Directions
+            link: https://www.google.com/maps/search/?api=1&query=42933+Thornblade+Cir+Broadlands+VA+20148
+          - title: Phone / WhatsApp
+            link_label: (571) 325-7622
+            link: tel:5713257622
+          - title: Email
+            link_label: Write
+            link: mailto:reshuartlobby@gmail.com
+          - title: Hours
+            note: |-
+              Monday – Friday · 9 am – 5 pm
+              Saturday & Sunday · closed (classes and events run by schedule)

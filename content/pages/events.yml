@@ -1,0 +1,35 @@
+title: Past Events
+description: 'Highlights from Reshu Art Lobby: art shows, adult classes, Ganesha workshops, summer camps and themed birthdays.'
+hero:
+  crumbs: Events / Past events
+  title: A look *back*
+  lede: Art shows, workshops, camps and celebrations — a few glimpses of the colour that happens at Reshu Art Lobby.
+  art: watercolor
+  art_seed: 17
+sections:
+  - layout: timeline
+    timeline:
+      - date: Dec 5, 2021
+        title: Art show at Herndon Community Center
+        text: Student and community work on display, celebrating artists of all ages.
+      - date: Winter 2021
+        title: Adult acrylic classes — still life
+        text: Many participants had never held an acrylic brush before; the results are hard to believe.
+      - date: Autumn 2020
+        title: Adult acrylic classes — landscape
+        text: In just nine classes, first-time painters completed 18×24″ canvases while developing observation skills.
+      - date: Aug 2020 · 2023 · 2025
+        title: Ganesha idol workshops
+        text: Kids sculpt with clay in one session and decorate in the next — first online, now in the studio.
+      - date: Summer 2022
+        title: Summer camp
+        text: Two weeks of science-infused art projects that encouraged critical and creative thinking.
+      - date: Always
+        title: Art-themed birthdays
+        text: We come to your party with canvas acrylic projects — or abstract pieces — to spark creativity.
+  - layout: cta
+    heading: Be part of the next one
+    body: Follow along on Instagram for upcoming events.
+    buttons:
+      - label: Follow on Instagram
+        link: https://www.instagram.com/reshuartlobby/

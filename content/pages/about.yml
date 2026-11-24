@@ -1,0 +1,55 @@
+title: About the Studio
+description: About Reshu Art Lobby — an artist-led art studio with locations in Chantilly and Ashburn, Virginia.
+hero:
+  crumbs: About
+  title: About the *studio*
+  lede: Two studios, a team of devoted teachers, and one belief — creativity knows no age.
+  art: watercolor
+  art_seed: 19
+sections:
+  - layout: columns
+    blocks:
+      - eyebrow: Our story
+        heading: An *artist-led* studio
+        body: |-
+          Reshu Art Lobby began as one artist’s wish to share what painting gave her. Today it is a small team of teachers running weekly classes, seasonal workshops, summer camps and celebrations at two studios in Northern Virginia — and online.
+
+          Every class is built around patience, encouragement and real technique, for ages four to adult. Beginners are always welcome.
+        button_label: Read Reshu’s bio
+        button_link: bio
+        button_style: link
+      - art: watercolor
+        art_seed: 19
+  - layout: cards
+    tint: tint
+    columns: "3"
+    eyebrow: The team
+    heading: Teachers & *collaborators*
+    cards:
+      - kicker: Studio teachers
+        title: Ms. Reshu, Ms. Shivali, Ms. Ranu, Ms. Anita, Ms. Richa
+        text: Weekly classes in Chantilly and Ashburn.
+      - kicker: Guest teacher
+        title: Ms Priya Ranjan
+        text: Fine-art teacher and watercolour artist; Madhubani specialist.
+      - kicker: Guest teacher
+        title: Raj Kaur
+        text: Mixed-media artist working with charcoal and gold leaf.
+    stats:
+      - number: '2'
+        label: Studios
+      - number: '14'
+        label: Art forms
+      - number: 4+
+        label: Ages welcome
+      - number: '5'
+        label: Resident teachers
+  - layout: cta
+    heading: Come and make something
+    body: We would love to meet you.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

@@ -1,0 +1,107 @@
+name: Reshu Art Lobby
+tagline: Artist · Studio
+description: Art classes for kids and adults, workshops, summer camps and paint parties in Chantilly and Ashburn, Virginia.
+announcement:
+  text: Spring ’26 registration is open — online & in person
+  link_label: Enrol now
+  link: register
+register_button:
+  label: Register
+  link: register
+phone: '5713257622'
+phone_display: (571) 325-7622
+email: reshuartlobby@gmail.com
+locations:
+  - name: Chantilly
+    address: |-
+      14240 Sullyfield Cir, Unit U
+      Chantilly, VA 20151
+    map_link: https://www.google.com/maps/search/?api=1&query=14240+Sullyfield+Cir+Unit+U+Chantilly+VA+20151
+  - name: Ashburn
+    address: |-
+      42933 Thornblade Cir
+      Broadlands, VA 20148
+    map_link: https://www.google.com/maps/search/?api=1&query=42933+Thornblade+Cir+Broadlands+VA+20148
+social:
+  - label: Instagram
+    link: https://www.instagram.com/reshuartlobby/
+  - label: Facebook
+    link: https://www.facebook.com/ReshuArtLobby
+footer_text: Art classes for kids and adults across Northern Virginia — in the studio and online.
+copyright: © 2026 Reshu Art Lobby. All rights reserved.
+nav:
+  - label: Home
+    link: index
+  - label: Classes
+    items:
+      - label: Class details & fees
+        link: classes
+      - label: Art forms
+        link: art-forms
+      - label: Adult classes
+        link: adults
+      - label: Summer camp
+        link: summer-camp
+  - label: Workshops
+    items:
+      - label: Madhubani & Lippan
+        link: madhubani-lippan
+      - label: Mixed media
+        link: mixed-media
+      - label: Mandala art
+        link: mandala
+      - label: Diwali workshop
+        link: diwali
+      - label: Ganesha idol making
+        link: ganesha
+  - label: Events
+    items:
+      - label: Paint & sip night
+        link: paint-and-sip
+      - label: Corporate team building paint event
+        link: corporate-team-building
+      - label: Private paint party event
+        link: paint-parties
+      - label: Past events
+        link: events
+  - label: Gallery
+    items:
+      - label: Student gallery
+        link: student-gallery
+      - label: Artist portfolio
+        link: portfolio
+      - label: Achievements
+        link: achievements
+  - label: Bio
+    link: bio
+  - label: About
+    link: about
+  - label: Contact
+    link: contact
+footer_columns:
+  - title: Explore
+    links:
+      - label: Classes & fees
+        link: classes
+      - label: Art forms
+        link: art-forms
+      - label: Summer camp
+        link: summer-camp
+      - label: Private paint party
+        link: paint-parties
+      - label: Gallery
+        link: student-gallery
+  - title: Studio
+    links:
+      - label: Bio
+        link: bio
+      - label: About the studio
+        link: about
+      - label: Achievements
+        link: achievements
+      - label: Past events
+        link: events
+      - label: Register
+        link: register
+      - label: Contact
+        link: contact

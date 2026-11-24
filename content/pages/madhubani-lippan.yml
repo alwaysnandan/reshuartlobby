@@ -1,0 +1,59 @@
+title: Madhubani & Lippan Art Workshops
+description: Learn Madhubani (Mithila) painting and Lippan mud-mirror art in Ashburn and Chantilly, VA.
+hero:
+  crumbs: Workshops / Madhubani & Lippan
+  title: Folk art, *by hand*
+  lede: Two living traditions of India — the geometric storytelling of Mithila painting and the shimmering mud-mirror art of Kutch.
+  art: madhubani
+  art_seed: 2
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: columns
+    blocks:
+      - eyebrow: Madhubani
+        heading: Mithila *painting*
+        body: |-
+          Madhubani (Mithila) art originated in the Madhubani district of Bihar, where it was painted on village walls with fingers, twigs, brushes, nib-pens and matchsticks, using natural dyes. It is known for eye-catching geometric patterns that depict mythology, flora, fauna and everyday life.
+
+          Taught by fine-art teacher **Ms Priya Ranjan**, an accomplished watercolour artist whose strengths include Madhubani. Learn birds, animals, nature and expressive human figures, step by step.
+      - prices:
+          - title: Beginner
+            note: |-
+              6 weeks · Tuesdays 6 – 7:30 pm · Ashburn
+              Motifs and traditional concepts · 11×14 paper · all materials
+            amount: $249
+          - title: Intermediate
+            note: |-
+              8 weeks · history, Bharni & Kachni styles, own composition on 18×24 paper
+              Schedule to be announced
+            amount: TBA
+  - layout: columns
+    tint: tint
+    blocks:
+      - art: lippan
+        art_seed: 3
+      - eyebrow: Lippan Kaam
+        heading: Mud & *mirror*
+        body: |-
+          Step into the traditional beauty of Lippan — the mud-mirror art of Kutch, Gujarat. In this beginner-friendly six-session workshop you will craft a circular piece with clay, mirrors and natural motifs, in colours you choose.
+
+          A collaboration with Varnamulu by Sameera. No experience needed.
+        prices:
+          - title: Beginner Lippan workshop
+            note: |-
+              6 sessions · Tuesdays (Ashburn), Wednesdays (Chantilly)
+              Includes 18″ round board, mirrors, clay, glue, paints, stencils
+            amount: $299
+  - layout: notice
+    text: '**A note on dates.** Dates and fees on this page follow the most recent schedule the studio has posted. New sessions are announced on [Instagram](https://www.instagram.com/reshuartlobby/) — message us to confirm the next dates before you book.'
+  - layout: cta
+    heading: Make something with your hands
+    body: Reserve your seat for the next folk-art workshop.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

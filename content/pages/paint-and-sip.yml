@@ -1,0 +1,64 @@
+title: Paint & Sip Night
+description: Guided acrylic Paint & Sip nights in Chantilly, VA — plus private events at our studio or your location.
+hero:
+  crumbs: Events / Paint & sip
+  title: Paint & *sip* night
+  lede: An unforgettable evening where creativity flows as freely as the drinks. Be guided step by step to a finished landscape you take home.
+  art: landscape
+  art_seed: 4
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: facts
+    facts:
+      - label: Where
+        value: Chantilly studio
+      - label: Time
+        value: 5 – 7:30 pm
+      - label: Canvas
+        value: 12 × 16 inches, acrylic
+      - label: Includes
+        value: Supplies, snacks & non-alcoholic drinks
+      - label: Price
+        value: $49
+  - layout: columns
+    blocks:
+      - art: landscape
+        art_seed: 12
+      - eyebrow: This season’s painting
+        heading: A moonlit *forest*
+        body: |-
+          A dreamy moonlit forest comes alive with vibrant red blossoms and a winding path glowing under the night sky. Deep blues, soft moonlight and delicate trees create a serene world of quiet wonder — perfect for blending colours.
+
+          Whether you are an experienced artist or a complete beginner, an instructor walks you from colour choices to brushwork. All you bring is enthusiasm.
+  - layout: prices
+    tint: tint
+    eyebrow: Private events
+    heading: Book your *own group*
+    intro: At our Chantilly studio or at your location. We provide 11×14 canvases, brushes, palettes, aprons, paints and easels.
+    prices:
+      - title: 6 participants
+        amount: $250
+      - title: 7 participants
+        amount: $275
+      - title: 8 participants
+        amount: $300
+      - title: 9 participants
+        amount: $325
+      - title: 10 participants
+        amount: $350
+      - title: 11 participants
+        amount: $375
+      - title: 12 participants
+        amount: $400
+    footnote: 'Each additional participant beyond 12: $30.'
+  - layout: cta
+    heading: Raise a brush
+    body: Reserve your seat or plan a private evening for friends and family.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

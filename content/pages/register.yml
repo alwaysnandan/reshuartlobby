@@ -1,0 +1,22 @@
+title: Register & Enrol
+description: Book a free trial class, register and enrol for Spring 26 art classes in Chantilly and Ashburn, VA — online and in person.
+hero:
+  crumbs: Register
+  title: Register & *enrol*
+  lede: Book your spot for a free trial class, then register and enrol in the batch that suits you. In-progress batches can also be joined — fees are pro-rated.
+  art: mandala
+  art_seed: 5
+sections:
+  - layout: columns
+    blocks:
+      - form: register
+      - eyebrow: How it works
+        heading: Three *steps*
+        list:
+          - title: 1 · Free trial.
+            text: Teachers assess level and place your child in a temporary batch.
+          - title: 2 · Choose a batch.
+            text: Twelve weekly one-hour classes, in the studio or online.
+          - title: 3 · Enrol.
+            text: Join any session at any point; in-progress batches are pro-rated.
+        body: Prefer to talk? Call or WhatsApp [(571) 325-7622](tel:5713257622).

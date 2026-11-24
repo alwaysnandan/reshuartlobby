@@ -1,0 +1,42 @@
+title: Artist Portfolio
+description: Selected paintings from founder Reshu Jain — still lifes, landscapes, folk life, nature, abstracts and portraits.
+hero:
+  crumbs: Gallery / Portfolio
+  title: Selected *works*
+  lede: Vivid still lifes, landscapes, folk life, nature, abstracts and portraits by studio founder Reshu Jain.
+  art: still
+  art_seed: 5
+sections:
+  - layout: gallery
+    footnote: Illustrative artwork shown here — replace with photographs of the artist’s paintings.
+    gallery:
+      - title: Dusk Reflections
+        art: landscape
+        category: Acrylic
+      - title: Golden Offering
+        art: texture
+        category: Mixed media
+      - title: Blue Hour
+        art: watercolor
+        category: Watercolour
+      - title: Red Blossoms
+        art: still
+        category: Acrylic
+      - title: Folk Fish
+        art: madhubani
+        category: Folk art
+      - title: Radiance
+        art: mandala
+        category: Mandala
+      - title: Terracotta
+        art: lippan
+        category: Folk art
+      - title: Abstraction I
+        art: abstract
+        category: Acrylic
+  - layout: cta
+    heading: Commission or collect
+    body: Enquire about original work and commissions.
+    buttons:
+      - label: Get in touch
+        link: contact

@@ -1,0 +1,47 @@
+title: Dot Mandala Art Workshop (Online)
+description: A six-day online dot mandala art workshop for adults and ages 15+. Calming, structured, beginner-friendly.
+hero:
+  crumbs: Workshops / Mandala
+  title: Patterns that *calm*
+  lede: Art that heals. A six-session online dot mandala workshop to restore balance, focus and creative flow — beginner level, ages 15 and above.
+  art: mandala
+  art_seed: 1
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: facts
+    facts:
+      - label: Format
+        value: Online · Zoom
+      - label: Sessions
+        value: 6 · Tuesdays
+      - label: Duration
+        value: 1½ hours each
+      - label: Canvas
+        value: 12 × 12 inches
+      - label: Fee
+        value: $199
+  - layout: columns
+    blocks:
+      - eyebrow: About mandala
+        heading: A circle of *focus*
+        body: |-
+          “Mandala” comes from the Sanskrit word for circle or discoid object — a geometric design rich in symbolism in Hindu and Buddhist traditions.
+
+          Each guided session is calming, structured and deeply satisfying. You will learn basic mandala patterns and techniques step by step, culminating in a finished dot-art piece of your own.
+
+          The Zoom link is shared with all participants. Questions? Write to reshuartlobby@gmail.com or call (571) 325-7622.
+      - art: mandala
+        art_seed: 6
+  - layout: notice
+    text: '**A note on dates.** Dates and fees on this page follow the most recent schedule the studio has posted. New sessions are announced on [Instagram](https://www.instagram.com/reshuartlobby/) — message us to confirm the next dates before you book.'
+  - layout: cta
+    heading: Find your centre
+    body: Join from anywhere — all you need is a quiet corner and a Zoom link.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

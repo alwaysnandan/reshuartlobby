@@ -1,7 +1,7 @@
 // Tiny static file server for local preview: `node serve.js` then open http://localhost:5057
 const http=require('http'),fs=require('fs'),path=require('path');
-const root=__dirname,port=process.env.PORT||5057;
-const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg'};
+const root=require('path').join(__dirname,'..','dist'),port=process.env.PORT||5057;
+const types={'.html':'text/html; charset=utf-8','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.webp':'image/webp','.gif':'image/gif'};
 http.createServer((req,res)=>{
   let p=decodeURIComponent(req.url.split('?')[0]);if(p==='/')p='/index.html';
   const f=path.join(root,path.normalize(p));

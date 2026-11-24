@@ -1,0 +1,77 @@
+title: Summer Camp 2026
+description: Seven weeks of art, STEM, craft and science for ages 5 to 11 at Reshu Art Lobby in Chantilly.
+hero:
+  crumbs: Classes / Summer camp
+  title: Summer camp, *reimagined*
+  lede: Every day brings a new project — no art repeats across weeks. Visual art, STEM, craft and science, with friends, snacks and fresh air.
+  art: diya
+  art_seed: 6
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: facts
+    facts:
+      - label: Ages
+        value: 5 – 11 years
+      - label: Dates
+        value: June 15 – July 31
+      - label: Format
+        value: 7 weekly enrolments, Mon – Fri
+      - label: Location
+        value: 4501 Pleasant Valley Rd, Chantilly
+  - layout: features
+    tint: tint
+    eyebrow: Highlights
+    heading: What your child will *make*
+    features:
+      - title: Visual art
+        text: Painting on canvas and paper in many mediums.
+      - title: STEM projects
+        text: Hands-on building and problem-solving.
+      - title: Craft & wood
+        text: Clay modelling and wooden craft ideas.
+      - title: Science art
+        text: Critical, creative thinking to reach a finished piece.
+      - title: Group activities
+        text: Collaborative projects and play.
+      - title: Young speakers’ platform
+        text: Confidence at the microphone.
+      - title: Outdoor games
+        text: Fresh air between projects.
+      - title: Snacks & supplies
+        text: All art supplies and snacks included.
+  - layout: prices
+    eyebrow: Tuition
+    heading: Weekly *enrolment*
+    prices:
+      - title: Full day
+        note: 9 am – 5 pm
+        amount: $320
+        unit: / week
+      - title: Half day — morning
+        note: 9 am – 1 pm
+        amount: $215
+        unit: / week
+      - title: Half day — afternoon
+        note: 1 pm – 5 pm
+        amount: $215
+        unit: / week
+      - title: Early drop-off
+        note: From 8:30 am
+        amount: $30
+        unit: / week
+      - title: Extended pick-up
+        note: Until 5:30 pm
+        amount: $25
+        unit: / week
+    footnote: Art supplies and snacks are included. Ask us about early-bird discounts when registration opens.
+  - layout: cta
+    heading: Reserve a week (or seven)
+    body: Camp spaces are enrolled weekly — pick the weeks that suit your family.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

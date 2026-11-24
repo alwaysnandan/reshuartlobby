@@ -1,0 +1,51 @@
+title: Corporate Team Building Paint Event
+description: Corporate team building paint events in Northern Virginia — guided acrylic painting for teams, at our studio or your office.
+hero:
+  crumbs: Events / Corporate team building
+  title: Corporate team building *paint event*
+  lede: Trade the meeting room for a canvas. A guided painting session that gets colleagues laughing, collaborating and creating together — no artistic experience required.
+  art: abstract
+  art_seed: 33
+  buttons:
+    - label: Request a quote
+      link: contact
+sections:
+  - layout: facts
+    facts:
+      - label: Format
+        value: Guided acrylic painting on canvas
+      - label: Length
+        value: About 1½ – 2 hours
+      - label: Where
+        value: Our studio, online or your office
+      - label: Supplies
+        value: All materials provided
+      - label: Group size
+        value: Small teams to large groups
+  - layout: columns
+    blocks:
+      - eyebrow: Why paint together
+        heading: Creativity that *connects*
+        body: A paint event gives a team something shared to do outside the usual routine. Everyone follows the same guided steps, yet every canvas turns out differently — a natural conversation starter that levels the room.
+        list:
+          - title: Everyone can join.
+            text: Our instructors guide each step, so first-timers feel as confident as seasoned painters.
+          - title: Hands-on bonding.
+            text: Relaxed, screen-free time that builds rapport across departments.
+          - title: A keepsake.
+            text: Every person takes home a finished painting.
+      - eyebrow: Perfect for
+        heading: Every *occasion*
+        list:
+          - text: Team-building days and offsites
+          - text: Onboarding and welcome events
+          - text: Holiday and appreciation parties
+          - text: Client and partner experiences
+          - text: Remote and hybrid team sessions
+        body: Tell us your date, group size and goals, and we will tailor the session and send a quote. Email [reshuartlobby@gmail.com](mailto:reshuartlobby@gmail.com) or call (571) 325-7622.
+  - layout: cta
+    heading: Plan your team event
+    body: Share your date and group size — we will take care of the rest.
+    buttons:
+      - label: Request a quote
+        link: contact

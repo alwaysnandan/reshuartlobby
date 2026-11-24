@@ -1,0 +1,57 @@
+title: Students’ Art Gallery
+description: Where imagination meets reality — paintings and crafts by Reshu Art Lobby students.
+hero:
+  crumbs: Gallery / Students
+  title: Where imagination *meets reality*
+  lede: Reshu Art Lobby’s creative world — work by our young artists and adult learners.
+  art: abstract
+  art_seed: 30
+sections:
+  - layout: gallery
+    footnote: Illustrative artwork shown here — replace with photographs of student work.
+    gallery:
+      - title: Moonlit Forest
+        art: landscape
+        category: Acrylic
+      - title: Garden Bouquet
+        art: still
+        category: Acrylic
+      - title: Little Fish
+        art: madhubani
+        category: Folk art
+      - title: Rain Washes
+        art: watercolor
+        category: Watercolour
+      - title: Mirror Circle
+        art: lippan
+        category: Folk art
+      - title: Golden Waves
+        art: texture
+        category: Mixed media
+      - title: Small Ganesha
+        art: ganesha
+        category: Clay
+      - title: Evening Diyas
+        art: diya
+        category: Crafts
+      - title: Mandala Bloom
+        art: mandala
+        category: Mandala
+      - title: Coloured Dreams
+        art: abstract
+        category: Acrylic
+      - title: Harbour Mist
+        art: watercolor
+        category: Watercolour
+      - title: Quiet Still Life
+        art: still
+        category: Acrylic
+  - layout: cta
+    heading: See your work here
+    body: Join a class and your next painting could be on our wall.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

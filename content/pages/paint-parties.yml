@@ -1,0 +1,47 @@
+title: Private Paint Party Event
+description: Private paint parties for birthdays, baby and bridal showers, ladies nights and celebrations in Northern Virginia.
+hero:
+  crumbs: Events / Private paint party
+  title: Private paint *party*
+  lede: Turn special moments into unforgettable memories. Our instructors guide every guest to a beautiful acrylic painting — at our studio, online, or at your home.
+  art: abstract
+  art_seed: 21
+  buttons:
+    - label: Enquire
+      link: contact
+sections:
+  - layout: columns
+    blocks:
+      - eyebrow: Perfect for
+        heading: Every *celebration*
+        list:
+          - text: Birthday parties
+          - text: Baby & bridal showers
+          - text: Ladies’ night / Paint & Sip
+          - text: Kids’ art parties
+          - text: Private events & celebrations
+        body: Sessions run 1½ – 2 hours and suit every skill level. Supplies, canvases (11×14″), paints, brushes and set-up are all provided, so you simply enjoy the moment.
+      - eyebrow: Packages
+        heading: All supplies *included*
+        prices:
+          - title: 6 participants
+            amount: $300
+          - title: 7 participants
+            amount: $325
+          - title: 8 participants
+            amount: $350
+          - title: 9 participants
+            amount: $375
+          - title: 10 participants
+            amount: $400
+          - title: 11 participants
+            amount: $425
+          - title: 12 participants
+            amount: $450
+        footnote: 'Additional participants beyond 12: $30 each. A $25 travel charge applies to bookings under $425 or locations more than 8 miles away.'
+  - layout: cta
+    heading: Plan your party
+    body: Email reshuartlobby@gmail.com or call (571) 325-7622.
+    buttons:
+      - label: Enquire now
+        link: contact

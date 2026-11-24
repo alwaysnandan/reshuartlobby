@@ -1,0 +1,37 @@
+title: Diwali Diya Workshop
+description: 'A three-hour Diwali workshop for kids: decorate diyas, a diya thali and a diya garland.'
+hero:
+  crumbs: Workshops / Diwali
+  title: Light up *Diwali*
+  lede: Give your child the joy and beauty of Diwali — three hours of designing, decorating and creating for your pooja area.
+  art: diya
+  art_seed: 5
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: columns
+    blocks:
+      - eyebrow: What to expect
+        heading: Diyas, thali & *garland*
+        body: |-
+          In this three-hour workshop children design seven stunning diyas and craft a beautiful diya garland, using the studio’s wide selection of decorative materials to make their own diya thali.
+
+          All art supplies are included.
+
+          ### Take-home keepsakes
+
+          - **Decorative diyas** — five, hand-decorated
+          - **A handcrafted decorative plate** (thali)
+          - **Hand-made Diwali hanging décor**
+      - art: diya
+        art_seed: 9
+  - layout: cta
+    heading: Celebrate with colour
+    body: Message us to be first to hear when next season’s Diwali workshop opens.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

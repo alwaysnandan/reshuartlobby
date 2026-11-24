@@ -1,0 +1,64 @@
+title: Adult Classes
+description: Weekly art classes, palette knife acrylics and ladies paint nights for adults in Chantilly and Ashburn, VA.
+hero:
+  crumbs: Classes / Adults
+  title: There is no age for *learning*
+  lede: Many of our adult students pick up a brush for the first time — and are astonished by what they paint. Unwind, learn and make something you are proud to hang.
+  art: still
+  art_seed: 7
+  buttons:
+    - label: Register
+      link: register
+sections:
+  - layout: prices
+    eyebrow: Programmes
+    heading: For grown-up *artists*
+    prices:
+      - title: Weekly adult classes — 12 classes
+        note: Choose acrylic, watercolour, charcoal, oil or paint your own reference · weekly, 1 hour
+        amount: $255
+      - title: Weekly adult classes — 8 classes
+        note: Weekly, 1 hour
+        amount: $190
+      - title: Acrylic palette-knife course
+        note: 7 classes · Tuesdays 6 pm · 1 hr 15 min
+        amount: $160
+      - title: Ladies’ paint night
+        note: 5 – 7 pm · Ashburn · supplies included · music & wine
+        amount: $50
+      - title: Two-day watercolour workshop
+        note: Technique, consistency and blending · supplies list shared by email
+        amount: $50
+    notice: '**A note on dates.** Dates and fees on this page follow the most recent schedule the studio has posted. New sessions are announced on [Instagram](https://www.instagram.com/reshuartlobby/) — message us to confirm the next dates before you book.'
+  - layout: columns
+    tint: tint
+    blocks:
+      - eyebrow: Palette knife acrylics
+        heading: Let the *stress* go
+        body: |-
+          Painting is a way of getting your stress and anxiety out of your system. Over seven classes you will learn colour perception, composition, blending, palette-knife technique and detailing — watching, then painting along interactively.
+
+          A supply list is shared in advance. Register by email or WhatsApp at (571) 325-7622.
+      - art: abstract
+        art_seed: 14
+  - layout: columns
+    blocks:
+      - art: landscape
+        art_seed: 9
+      - eyebrow: Ladies’ paint night
+        heading: An evening, *just for you*
+        body: |-
+          Gather your friends, enjoy the music, and learn to paint in acrylic with a glass of wine. All art supplies are included — you only bring yourselves.
+
+          **Ashburn** · 42933 Thornblade Cir, Broadlands · 5 – 7 pm
+        button_label: Reserve a seat
+        button_link: register
+  - layout: cta
+    heading: Pick up a brush
+    body: No experience needed. Tell us what you would love to paint.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

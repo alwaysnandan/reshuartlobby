@@ -1,0 +1,86 @@
+title: Class Details & Fees
+description: Art class structure, levels and fees for kids and adults at Reshu Art Lobby in Chantilly and Ashburn, VA.
+hero:
+  crumbs: Classes
+  title: Art classes for *kids & adults*
+  lede: Welcome to Reshu Art Lobby, where creativity knows no age. Whether you are picking up a brush for the first time or refining your craft, there is a place for you.
+  art: watercolor
+  art_seed: 5
+  buttons:
+    - label: Register
+      link: register
+    - label: Explore art forms
+      link: art-forms
+      style: outline
+sections:
+  - layout: columns
+    blocks:
+      - eyebrow: Why choose us
+        heading: A studio that *inspires*
+        list:
+          - title: Diverse range of classes.
+            text: Drawing and painting through sculpture and mixed media.
+          - title: Expert instructors.
+            text: Personal guidance and feedback in a warm, supportive setting.
+          - title: Flexible scheduling.
+            text: Weekdays, weekends and evenings.
+          - title: Inspiring atmosphere.
+            text: A welcoming studio full of tools, resources and fellow makers.
+      - eyebrow: Your teachers
+        heading: Five dedicated *artists*
+        chips:
+          - Ms. Reshu
+          - Ms. Shivali
+          - Ms. Ranu
+          - Ms. Anita
+          - Ms. Richa
+        body: 'Request a trial class: it helps our teachers assess your child’s level and place them in a temporary batch.'
+        button_label: Book a trial
+        button_link: register
+        button_style: link
+  - layout: numbers
+    tint: tint
+    eyebrow: Structure
+    heading: How classes *work*
+    numbers:
+      - number: '12'
+        title: Weeks
+        text: Each session is twelve weekly classes; payment is made every twelve weeks.
+      - number: 1h
+        title: Weekly
+        text: One class a week. Schedules and dates are shared once you enrol.
+      - number: '3'
+        title: Levels
+        text: Beginner, intermediate and advanced. Progress follows skill, not the calendar.
+      - number: 4+
+        title: Years old
+        text: Join at any time. Under 7s start with watercolour or oil pastels; 7+ may begin in any art form.
+  - layout: prices
+    eyebrow: Fees
+    heading: In-person *sessions*
+    prices:
+      - title: Age 8 and under
+        note: 12 weeks · weekly · 1 hour
+        amount: $250
+      - title: Age 8 – 18
+        note: 12 weeks · weekly · 1 hour
+        amount: $275
+      - title: Adults · 12 weeks
+        note: Age 18+ · weekly · 1 hour
+        amount: $299
+      - title: Adults · 8 weeks
+        note: Age 18+ · weekly · 1 hour
+        amount: $220
+      - title: Homemaker moms’ morning class
+        note: 12 weeks · 1.5 hours
+        amount: $350
+    footnote: Art supplies are not included in the fees above — add **$25 per person** to include them. New joiners may enrol in an in-progress batch; the fee is pro-rated.
+  - layout: cta
+    heading: Not sure where to begin?
+    body: Request a free trial class and we will recommend the right art form and level.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

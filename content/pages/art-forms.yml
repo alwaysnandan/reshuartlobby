@@ -1,0 +1,91 @@
+title: Art Forms
+description: Watercolour, acrylic, oil pastels, charcoal, mandala, Madhubani, Gond, clay and more at Reshu Art Lobby.
+hero:
+  crumbs: Classes / Art forms
+  title: A studio of *many mediums*
+  lede: Learn almost every foundational art form in one place — technique-based, session by session. Ages four and above may join at any point.
+  art: abstract
+  art_seed: 11
+sections:
+  - layout: cards
+    columns: "3"
+    cards:
+      - kicker: '01'
+        title: Watercolours
+        text: Brush strokes, landscapes, cityscapes and objects. Learn values, consistencies and colour composition.
+        art: watercolor
+        art_seed: 2
+      - kicker: '02'
+        title: Acrylic painting
+        text: Landscape, still life and abstract on canvas with a palette knife — blending, layering, sponging and texture.
+        art: landscape
+        art_seed: 3
+      - kicker: '03'
+        title: Oil pastels
+        text: 'The most-loved medium for young artists: blending, burnishing and layering for landscapes, animals and faces.'
+        art: abstract
+        art_seed: 4
+      - kicker: '04'
+        title: Pencil sketching
+        text: Control, shading and values; drawing human figures, with an introduction to charcoal.
+        art: still
+        art_seed: 5
+      - kicker: '05'
+        title: Charcoal
+        text: The darker side of sketching — realistic portraits built with the grid method.
+        art: texture
+        art_seed: 6
+      - kicker: '06'
+        title: Oil painting
+        text: Realism through glazing and layering, from first principles.
+        art: landscape
+        art_seed: 7
+      - kicker: '07'
+        title: Mandala art
+        text: Geometric shapes and repeating patterns layered into an alluring whole.
+        art: mandala
+        art_seed: 8
+      - kicker: '08'
+        title: Marker art
+        text: Imaginative colour mixing and shading, explored through themes.
+        art: abstract
+        art_seed: 9
+      - kicker: '09'
+        title: Pencil colouring
+        text: Soft strokes with Prismacolor pencils for remarkable detail and realism.
+        art: watercolor
+        art_seed: 10
+      - kicker: '10'
+        title: Egyptian art
+        text: Structured, vividly painted forms inspired by the sculpture and culture of Egypt.
+        art: madhubani
+        art_seed: 11
+      - kicker: '11'
+        title: Clay modeling
+        text: Decorative and useful pieces made by hand — including our annual Ganesha idols.
+        art: ganesha
+        art_seed: 12
+      - kicker: '12'
+        title: Modeling paste
+        text: Texture built with paste and tools, dimensional once dry.
+        art: texture
+        art_seed: 13
+      - kicker: '13'
+        title: Gond art
+        text: A tribal folk form celebrating the natural beauty around us.
+        art: madhubani
+        art_seed: 14
+      - kicker: '14'
+        title: Madhubani art
+        text: Mithila painting with bold geometric patterns and storytelling.
+        art: madhubani
+        art_seed: 15
+  - layout: cta
+    heading: Find your medium
+    body: Start with a free trial class and let your teacher guide the way.
+    buttons:
+      - label: Register
+        link: register
+      - label: Ask a question
+        link: contact
+        style: outline

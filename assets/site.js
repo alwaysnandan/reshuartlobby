@@ -1,31 +1,5 @@
 /* Reshu Art Lobby — shared header, footer, generated artwork, interactions */
 (function(){
-const NAV=[
- {t:'Home',h:'index.html'},
- {t:'Classes',m:[['Class details & fees','classes.html'],['Art forms','art-forms.html'],['Adult classes','adults.html'],['Summer camp','summer-camp.html']]},
- {t:'Workshops',m:[['Madhubani & Lippan','madhubani-lippan.html'],['Mixed media','mixed-media.html'],['Mandala art','mandala.html'],['Diwali workshop','diwali.html'],['Ganesha idol making','ganesha.html']]},
- {t:'Events',m:[['Paint & sip night','paint-and-sip.html'],['Corporate team building paint event','corporate-team-building.html'],['Private paint party event','paint-parties.html'],['Past events','events.html']]},
- {t:'Gallery',m:[['Student gallery','student-gallery.html'],['Artist portfolio','portfolio.html'],['Achievements','achievements.html']]},
- {t:'Bio',h:'bio.html'},
- {t:'About',h:'about.html'},
- {t:'Contact',h:'contact.html'}
-];
-const page=(location.pathname.split('/').pop()||'index.html');
-const on=h=>h===page?' on':'';
-const hdr=`<div class="announce">Spring &rsquo;26 registration is open &mdash; online &amp; in person <a href="register.html">Enrol now</a></div>
-<header class="site"><div class="wrap">
-<a class="brand" href="index.html">Reshu Art Lobby<small>Artist &middot; Studio</small></a>
-<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>
-<nav class="main">${NAV.map(n=>n.m?`<div class="dd${n.m.some(x=>x[1]===page)?' on':''}"><button>${n.t}</button><div class="menu">${n.m.map(x=>`<a class="${on(x[1]).trim()}" href="${x[1]}">${x[0]}</a>`).join('')}</div></div>`:`<a class="${on(n.h).trim()}" href="${n.h}">${n.t}</a>`).join('')}
-<a class="btn solid sm" href="register.html">Register</a></nav></div></header>`;
-const ftr=`<footer class="site"><div class="wrap"><div class="cols">
-<div><div class="brand">Reshu Art Lobby</div><p style="max-width:22em;font-size:.95rem">Art classes for kids and adults across Northern Virginia &mdash; in the studio and online.</p></div>
-<div><h5>Explore</h5><ul><li><a href="classes.html">Classes &amp; fees</a></li><li><a href="art-forms.html">Art forms</a></li><li><a href="summer-camp.html">Summer camp</a></li><li><a href="paint-parties.html">Paint parties</a></li><li><a href="student-gallery.html">Gallery</a></li></ul></div>
-<div><h5>Studio</h5><ul><li><a href="bio.html">Bio</a></li><li><a href="about.html">About the studio</a></li><li><a href="achievements.html">Achievements</a></li><li><a href="events.html">Past events</a></li><li><a href="register.html">Register</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-<div><h5>Visit</h5><ul><li>14240 Sullyfield Cir, Unit U<br>Chantilly, VA 20151</li><li>42933 Thornblade Cir<br>Broadlands, VA 20148</li><li><a href="tel:5713257622">(571) 325-7622</a></li><li><a href="mailto:reshuartlobby@gmail.com">reshuartlobby@gmail.com</a></li></ul></div>
-</div><div class="base"><span>&copy; 2026 Reshu Art Lobby. All rights reserved.</span><span><a href="https://www.instagram.com/reshuartlobby/" target="_blank" rel="noopener">Instagram</a> &nbsp;&middot;&nbsp; <a href="https://www.facebook.com/ReshuArtLobby" target="_blank" rel="noopener">Facebook</a></span></div></div></footer>`;
-document.body.insertAdjacentHTML('afterbegin',hdr);
-document.body.insertAdjacentHTML('beforeend',ftr);
 const b=document.querySelector('.burger'),nv=document.querySelector('nav.main');
 const setMenu=o=>{nv.classList.toggle('open',o);b.classList.toggle('x',o);b.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''};
 b.onclick=()=>setMenu(!nv.classList.contains('open'));
@@ -90,17 +64,17 @@ document.querySelectorAll('.rv').forEach(x=>io.observe(x));
 const gal=document.querySelector('[data-gallery]');
 if(gal){
  const items=JSON.parse(gal.dataset.gallery);
- gal.innerHTML=items.map((it,i)=>`<figure data-cat="${it[2]}"><div class="art" style="aspect-ratio:${[4/5,1,4/6,4/4.6][i%4]}">${art(it[1],i+3)}</div><figcaption><small>${it[2]}</small>${it[0]}</figcaption></figure>`).join('');
- gal.querySelectorAll('.art').forEach(a=>{const s=a.querySelector('svg');s.style.height='100%'});
+ gal.innerHTML=items.map((it,i)=>`<figure data-cat="${it[2]}"><div class="art" style="aspect-ratio:${[4/5,1,4/6,4/4.6][i%4]}">${it[3]?'<img src="'+it[3]+'" alt="'+it[0]+'" loading="lazy" style="width:100%;height:100%;object-fit:cover;display:block">':art(it[1],i+3)}</div><figcaption><small>${it[2]}</small>${it[0]}</figcaption></figure>`).join('');
+ gal.querySelectorAll('.art svg').forEach(s=>{s.style.height='100%'});
  const lb=document.createElement('div');lb.className='lightbox';document.body.appendChild(lb);lb.onclick=()=>lb.classList.remove('open');
  document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('open')});
- gal.addEventListener('click',e=>{const f=e.target.closest('figure');if(!f)return;lb.innerHTML=`<div class="box">${f.querySelector('svg').outerHTML}${f.querySelector('figcaption').lastChild.textContent}</div>`;lb.classList.add('open')});
+ gal.addEventListener('click',e=>{const f=e.target.closest('figure');if(!f)return;lb.innerHTML=`<div class="box">${(f.querySelector('svg')||f.querySelector('img')).outerHTML}${f.querySelector('figcaption').lastChild.textContent}</div>`;lb.classList.add('open')});
  document.querySelectorAll('[data-filter]').forEach(c=>c.onclick=()=>{document.querySelectorAll('[data-filter]').forEach(x=>x.classList.remove('on'));c.classList.add('on');const v=c.dataset.filter;gal.querySelectorAll('figure').forEach(f=>f.classList.toggle('hide',v!=='All'&&f.dataset.cat!==v))});
 }
 
 /* ---------- forms: compose an email (static site, no server) ---------- */
 document.querySelectorAll('form[data-mailto]').forEach(f=>f.addEventListener('submit',e=>{e.preventDefault();
  const d=new FormData(f),subj=f.dataset.subject||'Enquiry';let body='';d.forEach((v,k)=>{if(v)body+=`${k}: ${v}\n`});
- location.href=`mailto:reshuartlobby@gmail.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+ location.href=`mailto:${f.dataset.to||""}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
  const ok=f.querySelector('.ok');if(ok)ok.style.display='block'}));
 })();
