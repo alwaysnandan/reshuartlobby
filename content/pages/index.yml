@@ -1,20 +1,23 @@
 title: Reshu Art Lobby — Art Classes in Chantilly & Ashburn, VA
-description: Art classes for kids and adults, workshops, summer camps and paint parties in Chantilly and Ashburn, Virginia.
+description: Art classes for kids and adults, workshops, summer camps and paint
+  parties in Chantilly and Ashburn, Virginia.
 hero:
   style: home
   eyebrow: Chantilly · Ashburn · Online
-  title: The quiet joy of *making art*
-  lede: An intimate Northern Virginia art studio for children and adults. Learn watercolour, acrylic, charcoal and the folk traditions of India — guided patiently, one brushstroke at a time.
+  title: The quiet joy of *making the art*
+  lede: An intimate Northern Virginia art studio for children and adults. Learn
+    watercolour, acrylic, charcoal and the folk traditions of India — guided
+    patiently, one brushstroke at a time.
+  art: landscape
+  art_seed: 4
+  seal_label: Now open
+  seal_text: Spring ’26 session
   buttons:
     - label: Book a free trial
       link: register
     - label: View classes
       link: classes
       style: outline
-  art: landscape
-  art_seed: 4
-  seal_label: Now open
-  seal_text: Spring ’26 session
 sections:
   - layout: marquee
     words:
@@ -34,10 +37,13 @@ sections:
         art_seed: 2
       - eyebrow: Our philosophy
         heading: Discover your *inner artist*
-        body: 'Reshu Art Lobby was founded on a simple belief: creativity knows no age. From curious four-year-olds to seasoned adults, every student is guided at their own pace by experienced, encouraging teachers.'
+        body: "Reshu Art Lobby was founded on a simple belief: creativity knows no age.
+          From curious four-year-olds to seasoned adults, every student is
+          guided at their own pace by experienced, encouraging teachers."
         list:
           - title: Every level welcome.
-            text: Beginner, intermediate and advanced tracks across more than a dozen art forms.
+            text: Beginner, intermediate and advanced tracks across more than a dozen art
+              forms.
           - title: Flexible by design.
             text: Weekday, evening and weekend classes — join a session at any point.
           - title: Try before you commit.
@@ -47,20 +53,22 @@ sections:
         button_style: link
   - layout: cards
     tint: tint
-    columns: "3"
     eyebrow: Learn with us
     heading: Classes for *every age*
-    intro: Structured twelve-week sessions, one hour a week, in our Chantilly and Ashburn studios.
+    intro: Structured twelve-week sessions, one hour a week, in our Chantilly and
+      Ashburn studios.
     cards:
       - kicker: Ages 4 – 18
         title: Kids & Youth Classes
-        text: Twelve-week sessions in any art form, with a gentle path from beginner to advanced.
+        text: Twelve-week sessions in any art form, with a gentle path from beginner to
+          advanced.
         link: classes
         art: watercolor
         art_seed: 5
       - kicker: Adults
         title: Adult Classes & Nights
-        text: Unhurried weekly classes, palette-knife acrylics and relaxed ladies’ paint nights.
+        text: Unhurried weekly classes, palette-knife acrylics and relaxed ladies’ paint
+          nights.
         link: adults
         art: abstract
         art_seed: 8
@@ -70,12 +78,10 @@ sections:
         link: summer-camp
         art: diya
         art_seed: 3
+    columns: "3"
   - layout: cards
-    columns: "4"
     eyebrow: Workshops & events
     heading: Special sessions to *try something new*
-    button_label: All workshops
-    button_link: madhubani-lippan
     cards:
       - kicker: Folk art
         title: Madhubani & Lippan
@@ -101,6 +107,9 @@ sections:
         link: paint-and-sip
         art: landscape
         art_seed: 6
+    columns: "4"
+    button_label: All workshops
+    button_link: madhubani-lippan
   - layout: quote
     text: “Art enables us to find ourselves and lose ourselves at the same time.”
     cite: Thomas Merton
@@ -108,7 +117,9 @@ sections:
     blocks:
       - eyebrow: Celebrate
         heading: Paint *parties* & events
-        body: Birthdays, showers, ladies’ nights and team events — we bring the canvases, brushes and a patient instructor, to our studio or to your home.
+        body: Birthdays, showers, ladies’ nights and team events — we bring the
+          canvases, brushes and a patient instructor, to our studio or to your
+          home.
         button_label: See packages
         button_link: paint-parties
         button_style: outline
@@ -125,7 +136,8 @@ sections:
             link: https://www.google.com/maps/search/?api=1&query=42933+Thornblade+Cir+Broadlands+VA+20148
   - layout: cta
     heading: Begin with a free trial class
-    body: Spring ’26 registration is open for both online and in-person classes. In-progress batches can be joined at any time, pro-rated.
+    body: Spring ’26 registration is open for both online and in-person classes.
+      In-progress batches can be joined at any time, pro-rated.
     buttons:
       - label: Register
         link: register
