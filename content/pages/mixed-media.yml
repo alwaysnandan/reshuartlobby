@@ -8,7 +8,7 @@ hero:
   art_seed: 4
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: facts
     facts:
@@ -46,7 +46,7 @@ sections:
     body: Seats are limited for each studio session.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

@@ -7,7 +7,7 @@ announcement:
   link: register
 register_button:
   label: Register
-  link: register
+  link: https://reshuartlobby.brightpanda.app/
 phone: '5713257622'
 phone_display: (571) 325-7622
 email: reshuartlobby@gmail.com
@@ -102,6 +102,6 @@ footer_columns:
       - label: Past events
         link: events
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Contact
         link: contact

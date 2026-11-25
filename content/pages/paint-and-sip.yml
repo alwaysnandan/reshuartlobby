@@ -8,7 +8,7 @@ hero:
   art_seed: 4
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: facts
     facts:
@@ -58,7 +58,7 @@ sections:
     body: Reserve your seat or plan a private evening for friends and family.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

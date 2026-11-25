@@ -8,7 +8,7 @@ hero:
   art_seed: 5
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
     - label: Explore art forms
       link: art-forms
       style: outline
@@ -80,7 +80,7 @@ sections:
     body: Request a free trial class and we will recommend the right art form and level.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

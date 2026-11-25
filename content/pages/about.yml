@@ -49,7 +49,7 @@ sections:
     body: We would love to meet you.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

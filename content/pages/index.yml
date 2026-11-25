@@ -15,9 +15,9 @@ hero:
   seal_text: Spring ’26 session
   buttons:
     - label: Book a free trial
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
     - label: View classes
-      link: classes
+      link: https://reshuartlobby.brightpanda.app/
       style: outline
 sections:
   - layout: marquee
@@ -141,7 +141,7 @@ sections:
       In-progress batches can be joined at any time, pro-rated.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

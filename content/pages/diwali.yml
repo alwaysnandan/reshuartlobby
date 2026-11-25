@@ -8,7 +8,7 @@ hero:
   art_seed: 5
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: columns
     blocks:
@@ -31,7 +31,7 @@ sections:
     body: Message us to be first to hear when next season’s Diwali workshop opens.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

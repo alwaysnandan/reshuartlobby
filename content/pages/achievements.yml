@@ -42,7 +42,7 @@ sections:
     body: Start with a free trial class.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

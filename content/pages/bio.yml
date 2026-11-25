@@ -30,7 +30,7 @@ sections:
     body: Join a class, a workshop or a paint night at the studio.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

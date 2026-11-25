@@ -8,7 +8,7 @@ hero:
   art_seed: 1
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: facts
     facts:
@@ -41,7 +41,7 @@ sections:
     body: Join from anywhere — all you need is a quiet corner and a Zoom link.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

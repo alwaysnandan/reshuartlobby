@@ -8,7 +8,7 @@ hero:
   art_seed: 7
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: prices
     eyebrow: Programmes
@@ -58,7 +58,7 @@ sections:
     body: No experience needed. Tell us what you would love to paint.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

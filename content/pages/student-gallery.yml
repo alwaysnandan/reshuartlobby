@@ -51,7 +51,7 @@ sections:
     body: Join a class and your next painting could be on our wall.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

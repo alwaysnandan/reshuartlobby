@@ -8,7 +8,7 @@ hero:
   art_seed: 6
   buttons:
     - label: Register
-      link: register
+      link: https://reshuartlobby.brightpanda.app/
 sections:
   - layout: facts
     facts:
@@ -71,7 +71,7 @@ sections:
     body: Camp spaces are enrolled weekly — pick the weeks that suit your family.
     buttons:
       - label: Register
-        link: register
+        link: https://reshuartlobby.brightpanda.app/
       - label: Ask a question
         link: contact
         style: outline

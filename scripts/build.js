@@ -21,7 +21,8 @@ const href = u => {
   if (!u) return 'index.html';
   return /\.|\?/.test(u) ? u : u + '.html';            // "classes" -> "classes.html"
 };
-const ext = u => /^https?:/.test(u || '') ? ' target="_blank" rel="noopener"' : '';
+// the studio's own registration app opens in the same tab; other web addresses open a new one
+const ext = u => /^https?:/.test(u || '') && !/brightpanda.app/.test(u) ? ' target="_blank" rel="noopener"' : '';
 const src = u => String(u).trim().replace(/^\/+/, '').replace(/^reshuartlobby\//, '');
 
 const site = read('content/site.yml');
