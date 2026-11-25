@@ -36,7 +36,7 @@ sections:
           - Ms. Richa
         body: 'Request a trial class: it helps our teachers assess your child’s level and place them in a temporary batch.'
         button_label: Book a trial
-        button_link: register
+        button_link: https://reshuartlobby.brightpanda.app/
         button_style: link
   - layout: numbers
     tint: tint

@@ -52,7 +52,7 @@ sections:
 
           **Ashburn** · 42933 Thornblade Cir, Broadlands · 5 – 7 pm
         button_label: Reserve a seat
-        button_link: register
+        button_link: https://reshuartlobby.brightpanda.app/
   - layout: cta
     heading: Pick up a brush
     body: No experience needed. Tell us what you would love to paint.

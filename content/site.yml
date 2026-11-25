@@ -4,7 +4,7 @@ description: Art classes for kids and adults, workshops, summer camps and paint 
 announcement:
   text: Spring ’26 registration is open — online & in person
   link_label: Enrol now
-  link: register
+  link: https://reshuartlobby.brightpanda.app/
 register_button:
   label: Register
   link: https://reshuartlobby.brightpanda.app/
